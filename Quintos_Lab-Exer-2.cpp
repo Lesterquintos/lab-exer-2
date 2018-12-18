@@ -1,20 +1,28 @@
+//max function
 #include <iostream>
 using namespace std;
 
-int main()
-{
-    int num1, num2;
+int max(int a, int b){
+
     cout<<"Enter first number:"; 
-    cin>>num1;
+    cin>>a;
     cout<<"Enter second number:"; 
-    cin>>num2;
-    if(num1>num2)
-    {
-	cout<<"First number = "<<num1<<" is the largest";
-    }
-    else
-    {
-	cout<<"Second number = "<<num2<<" is the largest";
-    }
+    cin>>b;
+    
+   if (a > b) {
+   cout<<"First Number " <<a<<" is the largest ";
+	  return a;
+	}
+	else
+	{
+	
+	cout<<"Second Number " <<b<<" is the largest ";
+   return b;
+   }
+} 
+
+int main() {
+
+    cout << max(7, 4) << endl;
     return 0;
 }
